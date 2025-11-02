@@ -27,3 +27,6 @@
 go mod init <name of module/github remote url>
 eg: go mod init github.com/caroljoyv/golang-tutorials.git
 ```
+
+- This creates a go.mod folder.
+![go.mod image](./assets/images/go.mod.png)
