@@ -10,8 +10,6 @@
 7. Garbage collection
 
 
-# Initializing a Golang Project
-
 ## 2 concpets to know before starting
 
 -- Package
@@ -22,7 +20,7 @@
     - a collection of packages
     - when a new project is initialized, we are initializing a new module
 
-### Initializing a golang project
+## Initializing a golang project
 
 ```
 go mod init <name of module/github remote url>
@@ -70,7 +68,32 @@ package main
     ```
         go run <file path>
     ```
-    
+
+
+## Variables
+- To declare a variable, we use the ```var``` keyword followed by the variable name and the type.
+- For eg,
+    ```
+        var intNum int
+    ```
+- Remember, just like imports, every variable that is declared must be used. This is part of the go Simplicity design philosophy where the ides is that code must be easy to read and understand. This also means that there are no pointless variables in your code.
+
+### Integer types
+    - int
+    - int8
+    - int16
+    - int 32 
+    - int 64
+
+- If you try to initialize a variable with a value that requires more bits, then it throws an overflow error.
+![overflow error](assets/images/overflow%20error.png)
+- Compiler won't throw any overflow errors at runtime. The program will run but will produce unexpected results.
+- ```int``` will default to 32 bits or 64 bits depending on your system architecture.
+
+
+
+
+
 
 
 
