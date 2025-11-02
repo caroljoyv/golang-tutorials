@@ -20,3 +20,10 @@
 -- Module
     - a collection of packages
     - when a new project is initialized, we are initializing a new module
+
+### Initializing a golang project
+
+```
+go mod init <name of module/github remote url>
+eg: go mod init github.com/caroljoyv/golang-tutorials.git
+```
